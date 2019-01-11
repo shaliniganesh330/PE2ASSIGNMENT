@@ -2,15 +2,14 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static java.lang.Integer.reverse;
 import static org.junit.Assert.*;
 
-public class PelindromeTest {
-    Pelindrome obj;
+public class PelindromeCheckTest {
+    PelindromeCheck obj;
     @Before
     public void setUp()
     {
-        obj = new Pelindrome();
+        obj = new PelindromeCheck();
     }
 
     @After

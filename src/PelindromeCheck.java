@@ -1,4 +1,4 @@
-public class Pelindrome {
+public class PelindromeCheck {
 
     public int reverse(int num)
     {
