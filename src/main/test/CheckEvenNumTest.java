@@ -1,3 +1,4 @@
+import com.stackroute.pe2.EvennumCheck;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -5,18 +6,17 @@ public class CheckEvenNumTest {
 
 
     @Test
-    public void testSuccess_1()
+    public void testCheckEvenNumSuccess()
     {
         boolean actual = EvennumCheck.isEven(24);
         boolean expected =true;
         assertEquals(expected,actual);
     }
-
     @Test
-    public void testFail()
+    public void testCheckEvenNumFailure()
     {
         boolean actual = EvennumCheck.isEven(123);
-        boolean expected =false;
-        assertEquals(expected,actual);
+        boolean expected =true;
+        assertNotEquals(expected,actual);
     }
 }
